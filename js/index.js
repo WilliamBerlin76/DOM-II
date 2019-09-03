@@ -44,7 +44,27 @@ revertH1.addEventListener('dblclick', e => {
     revertH1.textContent = "Fun Bus"
 })
 
-const moveBus = document.querySelector('h1')
-moveBus.addEventListener('copy', e => {
-    window.alert("You have copied the title");
-}, false);
+const copyTitle = document.querySelector('html')
+copyTitle.addEventListener('copy', e => {
+    window.alert("You have copied a thing");
+});
+const cutTitle = document.querySelector('html')
+cutTitle.addEventListener('cut', e => {
+    window.alert('That will be tought to cut');
+});
+
+// prevent default
+
+const link = document.querySelectorAll('a')
+link[0].addEventListener('click', e => {
+    e.preventDefault();
+})
+link[1].addEventListener('click', e => {
+    e.preventDefault();
+})
+link[2].addEventListener('click', e => {
+    e.preventDefault();
+})
+link[3].addEventListener('click', e => {
+    e.preventDefault();
+})
