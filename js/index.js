@@ -50,7 +50,7 @@ copyTitle.addEventListener('copy', e => {
 });
 const cutTitle = document.querySelector('html')
 cutTitle.addEventListener('cut', e => {
-    window.alert('That will be tought to cut');
+    window.alert('That will be tough to cut');
 });
 
 // prevent default
@@ -78,5 +78,5 @@ sectionClick.addEventListener('click', e => {
 const textDivClick = document.querySelector('.text-content')
 textDivClick.addEventListener('click', e => {
    textDivClick.style.color = 'blue'; 
-   event.stopPropagation();
+   e.stopPropagation();
 })
