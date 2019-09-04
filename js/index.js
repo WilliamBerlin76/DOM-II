@@ -68,3 +68,15 @@ link[2].addEventListener('click', e => {
 link[3].addEventListener('click', e => {
     e.preventDefault();
 })
+
+// prevent event propagation
+const sectionClick = document.querySelector('.content-section')
+sectionClick.addEventListener('click', e => {
+    sectionClick.style.backgroundColor = 'orange'
+})
+
+const textDivClick = document.querySelector('.text-content')
+textDivClick.addEventListener('click', e => {
+   textDivClick.style.color = 'blue'; 
+   event.stopPropagation();
+})
